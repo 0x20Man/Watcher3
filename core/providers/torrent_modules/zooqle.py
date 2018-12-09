@@ -65,8 +65,8 @@ def _parse(xml, imdbid):
             result['imdbid'] = imdbid
             result['indexer'] = 'Zooqle'
             result['info_link'] = i.find('guid').text
-            result['torrentfile'] = i[8].text
-            result['guid'] = i[7].text.lower()
+            result['torrentfile'] = i[9].text
+            result['guid'] = i[8].text.lower()
             result['type'] = 'magnet'
             result['downloadid'] = None
             result['freeleech'] = 0
